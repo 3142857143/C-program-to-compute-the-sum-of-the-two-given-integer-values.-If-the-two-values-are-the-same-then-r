@@ -1,0 +1,30 @@
+/*This program to compute the sum of the given two integer and triple it if two intger are same*/
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+int sum(int n, int m);
+int main()
+{
+    /*Declaring the variable*/
+    int a, b, c;
+    printf("Enter the first integer: "); 
+    scanf("%d", &a); /*Getting the first integer into variable a*/
+    printf("Enter the second integer: ");
+    scanf("%d", &b); /*Getting the second integer into variable b*/
+    if(a == b)
+    {
+        c = sum(a, b) * 3;/*Putting a condition that if a and b are same sum will be triopled*/
+    }
+    else
+    {
+        c = sum(a, b);/*If the condition are not same simply compute sum*/
+    }
+    printf("The sum of %d and %d is %d", a, b, c);
+    return 0;
+}
+int sum(int n, int m)
+{
+    int sum;
+    sum = n + m;
+    return sum;
+}
